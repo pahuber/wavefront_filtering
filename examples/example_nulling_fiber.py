@@ -68,8 +68,5 @@ intensity_filtered = wavefront_const.intensity
 null_depth = np.sum(wavefront_dest.intensity) / np.sum(wavefront_const.intensity)
 throughput = np.sum(intensity_filtered) / np.sum(intensity_unfiltered)
 
-print(np.sum(intensity_unfiltered))
-print(np.sum(intensity_filtered))
-
 print('Null Depth: ', null_depth)
 print('Throughput: ', throughput)
